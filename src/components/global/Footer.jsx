@@ -10,17 +10,24 @@ export const Footer = () => {
       <section className='mainFooter-content'>
         <img src={typewriterDivider} className='mainFooter-divider' alt='divider' />
 
-        <section className='mainFooter-section'>
+        <section className='mainFooter-socialSection'>
           <h2>Let's work together!</h2>
-          <SocialMediaIcons />
+
+
+          <SocialMediaIcons classes='mainFooter-socialSection-socialIcons' />
         </section>
 
-        <section className='mainFooter-section'>
-          <input type='text' placeholder='Name' required='true' />
+        <section className='mainFooter-contactSection'>
+          <input type='text' placeholder='Name' required='true' className='mainFooter-contactSection-name' />
 
-          <input type='email' placeholder='Email Address' required='true' />
+          <input
+            type='email'
+            placeholder='Email Address'
+            required='true'
+            className='mainFooter-contactSection-email'
+          />
 
-          <select required='true'>
+          <select required='true' className='mainFooter-contactSection-services'>
             <option>-- services --</option>
             <option value='Web Editorial'>Web Editorial</option>
             <option value='Print Editorial'>Print Editorial</option>
@@ -28,15 +35,18 @@ export const Footer = () => {
             <option value='Content Marketing'>Content Marketing</option>
             <option value='Email Marketing'>Email Marketing</option>
             <option value='Corporate Blogs'>Corporate Blogs</option>
-            <option value='Sponored Content'>Sponored Content</option>
+            <option value='Sponsored Content'>Sponsored Content</option>
             <option value='Web Copy'>Web Copy</option>
             <option value='Public Relations'>Public Relations</option>
             <option value='Something Else'>Something Else</option>
           </select>
 
-          <textarea placeholder='Message' required='true'>
-
+          <textarea placeholder='Message' required='true' className='mainFooter-contactSection-message'>
           </textarea>
+
+          <button className='mainFooter-contactSection-submit'>
+            Submit
+          </button>
         </section>
       </section>
     </footer>

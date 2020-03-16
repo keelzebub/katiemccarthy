@@ -1,12 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import linkedInIcon from '../../images/linkedin-icon.svg';
 import instagramIcon from '../../images/instagram-icon.svg';
 import facebookIcon from '../../images/facebook-icon.svg';
 import twitterIcon from '../../images/twitter-icon.svg';
 
-export const SocialMediaIcons = () => (
-  <section>
+export const SocialMediaIcons = ({classes}) => (
+  <section className={classes}>
     <a href='https://www.facebook.com/ktjmccarthy'
         className='socialMediaIcon'
         target='_blank'
@@ -37,3 +38,7 @@ export const SocialMediaIcons = () => (
     </a>
   </section>
 );
+
+SocialMediaIcons.propTypes = {
+  classes: PropTypes.string,
+};

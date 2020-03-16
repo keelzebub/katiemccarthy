@@ -77,14 +77,23 @@ a {
 }
 
 input,
-textarea,
-select {
-  width: 100%;
+textarea {
   padding: 16px;
+  line-height: 1em;
   background-color: #eee;
   border: none;
   border-radius: 0;
-  color: #999;
+  color: #666;
+}
+
+select {
+  padding: 16px 20px 16px 10px;
+  line-height: 1em;
+  background-color: #eee;
+  border: none;
+  border-radius: 0;
+  color: #666;
+  appearance: none;
 }
 
 .page {
