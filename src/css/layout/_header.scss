@@ -1,0 +1,35 @@
+.mainHeader {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: $header-height;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 600;
+  background: $header-color;
+}
+
+.mainHeader-content {
+  width: 80%;
+  max-width: $page-width;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainHeader-nav {
+  display: flex;
+}
+
+a.mainHeader-nav-navItem,
+.mainHeader-nav-navItem {
+  padding: 0 12px;
+  color: #333;
+
+  &:hover {
+    color: #666;
+  }
+}

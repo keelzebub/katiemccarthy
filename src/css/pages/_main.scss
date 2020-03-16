@@ -1,0 +1,158 @@
+.page--main {
+  padding-top: $header-height;
+}
+
+// Hero section
+.main-hero {
+  height: calc(100vh - #{$header-height});
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @include breakpoint(tabletLandscape) {
+    height: auto;
+    padding-bottom: 0;
+  }
+}
+
+.main-hero-img {
+  width: 810px;
+  height: 415px;
+
+  @include breakpoint(tabletLandscape) {
+    width: 80%;
+    height: auto;
+  }
+
+  @include breakpoint(tabletPortrait) {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.main-hero-button {
+  width: 50px;
+  height: 50px;
+
+  @include breakpoint(tabletLandscape) {
+    display: none;
+  }
+}
+
+// Featured Work section
+.main-featuredWork {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-featuredWork-link {
+  padding: 0 6px;
+}
+
+.main-featuredWork-excerpts {
+  margin-top: 54px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @include breakpoint(tabletLandscape) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.excerptWidget {
+  width: 30%;
+
+  @include breakpoint(tabletLandscape) {
+    width: 100%;
+    margin-bottom: 54px;
+    border: none;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Typewriter Divider
+.main-divider {
+  width: 100%;
+  margin: 54px 0;
+}
+
+// About section
+.main-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @include breakpoint(tabletLandscape) {
+    display: block;
+  }
+}
+
+.main-about-picture {
+  width: 30%;
+  text-align: center;
+
+  @include breakpoint(tabletLandscape) {
+    width: auto;
+  }
+
+  img {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}
+
+.main-about-profile {
+  width: 65%;
+
+  @include breakpoint(tabletLandscape) {
+    width: auto;
+    margin-top: 54px;
+  }
+}
+
+.main-about-socialIcon {
+  margin-right: 8px;
+
+  img {
+    height: 36px;
+    width: 36px;
+  }
+}
+
+.main-about-divider {
+  width: 100%;
+}
+
+// Services section
+.main-services {
+  text-align: center;
+}
+
+.main-services-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.main-services-list-item {
+  width: 30%;
+  height: 160px;
+  text-align: center;
+
+  .el {
+    font-size: 36px;
+  }
+}

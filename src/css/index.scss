@@ -1,0 +1,16 @@
+// Base
+@import 'global/normalize';
+@import 'global/variables';
+@import 'global/mixins';
+@import 'global/base';
+@import 'global/icons';
+
+// Layout
+@import 'layout/header';
+
+// Pages
+@import 'pages/main';
+
+// Components
+@import 'components/excerpt_widget';
+@import 'components/testimonials_widget';
