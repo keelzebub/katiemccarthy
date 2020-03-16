@@ -3,34 +3,27 @@ import { Link } from 'react-router-dom';
 
 import { ExcerptWidget } from '../global/ExcerptWidget';
 import { TestimonialsWidget } from '../global/TestimonialsWidget';
+import { SocialMediaIcons } from '../global/SocialMediaIcons';
 import { Icon } from '../global/Icon';
+
+import services from '../../lib/services';
 
 import hero from '../../images/hero.png';
 import typewriterDivider from '../../images/typewriter-divider.png';
 import goldDivider from '../../images/gold-divider.png';
 import profilePicture from '../../images/profile-picture.jpg';
-import linkedInIcon from '../../images/linkedin-icon.svg';
-import instagramIcon from '../../images/instagram-icon.svg';
-import facebookIcon from '../../images/facebook-icon.svg';
-import twitterIcon from '../../images/twitter-icon.svg';
-
-import services from '../../lib/services';
 
 export const Main = () => {
 
   const buildServiceItem = (service) => {
     return (
       <article className='main-services-list-item'>
-        <i className={`el el-${service.icon}`}></i>
+        <img src={service.icon} alt={service.name} />
         <h4>{service.name}</h4>
         <p>{service.description}</p>
       </article>
     );
   }
-
-
-
-
 
   return (
     <main className='page page--main'>
@@ -96,36 +89,7 @@ export const Main = () => {
           <p>
             Let’s work together!
           </p>
-          <section>
-            <a href='https://www.facebook.com/ktjmccarthy'
-                className='main-about-socialIcon'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-              <img src={facebookIcon} alt='Facebook' />
-            </a>
-            <a href='https://twitter.com/ktjmccarthy'
-                className='main-about-socialIcon'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-              <img src={twitterIcon} alt='Twitter' />
-            </a>
-            <a href='https://www.linkedin.com/in/ktjmccarthy/'
-                className='main-about-socialIcon'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-              <img src={linkedInIcon} alt='LinkedIn' />
-            </a>
-            <a href='https://www.instagram.com/katiejmccarthy/'
-                className='main-about-socialIcon'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-              <img src={instagramIcon} alt='instagram' />
-            </a>
-          </section>
+          <SocialMediaIcons />
         </article>
       </section>
 

@@ -17,12 +17,6 @@ export const Header = () => {
             <li><Link to='/resume' className='mainHeader-nav-navItem'>Resumé</Link></li>
             <li><Link to='/hire-me' className='mainHeader-nav-navItem'>Hire Me</Link></li>
           </ul>
-
-
-
-
-
-
         </nav>
       </section>
     </header>

@@ -76,6 +76,17 @@ a {
   }
 }
 
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 16px;
+  background-color: #eee;
+  border: none;
+  border-radius: 0;
+  color: #999;
+}
+
 .page {
   width: 80%;
   max-width: $page-width;

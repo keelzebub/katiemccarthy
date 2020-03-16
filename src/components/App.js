@@ -9,6 +9,7 @@ import { HireMe } from './pages/HireMe';
 import { Main } from './pages/Main';
 
 import { Header } from './global/Header';
+import { Footer } from './global/Footer';
 import '../css/index.scss';
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
         <Route path='/hire-me'><HireMe /></Route>
         <Route path='/'><Main /></Route>
       </Switch>
+
+      <Footer />
     </Router>
   );
 }

@@ -9,11 +9,14 @@
   margin: 0 4px;
 }
 
-.testimonialsWidget-testimonial-name {
-  margin: 12px 0;
-  padding: 0;
+.testimonialsWidget-testimonial-divider {
+  height: 3px;
+  width: 175px;
+  margin: 20px auto;
+  background-color: #efefef;
 }
 
-.testimonialsWidget-testimonial-content {
-  margin-top: 0;
+.testimonialsWidget-testimonial-name {
+  font-size: 12px;
+  color: $font-color;
 }

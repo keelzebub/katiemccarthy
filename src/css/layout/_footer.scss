@@ -1,0 +1,23 @@
+.mainFooter {
+  width: 100%;
+  background: $header-color;
+}
+
+.mainFooter-content {
+  width: 80%;
+  max-width: $page-width;
+  margin: 0 auto;
+  padding: 20px 0 54px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.mainFooter-divider {
+  width: 100%;
+}
+
+.mainFooter-section {
+  width: 45%;
+}

@@ -23,8 +23,9 @@ export const TestimonialsWidget = () => {
         <Icon name='icon-star' classes='testimonialsWidget-testimonial-star' />
         <Icon name='icon-star' classes='testimonialsWidget-testimonial-star' />
       </article>
-      <h2 className='testimonialsWidget-testimonial-name'>{testimonial.name}</h2>
-      <p className='testimonialsWidget-testimonial-content'>{testimonial.content}</p>
+      <p>{testimonial.content}</p>
+      <div className='testimonialsWidget-testimonial-divider'></div>
+      <span className='testimonialsWidget-testimonial-name'>{testimonial.name}</span>
     </section>
   );
 

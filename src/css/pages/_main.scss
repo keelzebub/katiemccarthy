@@ -122,15 +122,6 @@
   }
 }
 
-.main-about-socialIcon {
-  margin-right: 8px;
-
-  img {
-    height: 36px;
-    width: 36px;
-  }
-}
-
 .main-about-divider {
   width: 100%;
 }
@@ -149,10 +140,15 @@
 
 .main-services-list-item {
   width: 30%;
-  height: 160px;
+  height: 220px;
+  padding: 20px 0;
   text-align: center;
 
-  .el {
-    font-size: 36px;
+  @include breakpoint(tabletPortrait) {
+    width: 45%;
+  }
+
+  @include breakpoint(mobile) {
+    width: 100%;
   }
 }
