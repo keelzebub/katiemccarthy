@@ -18,16 +18,16 @@ export const Footer = () => {
         </section>
 
         <section className='mainFooter-contactSection'>
-          <input type='text' placeholder='Name' required='true' className='mainFooter-contactSection-name' />
+          <input type='text' placeholder='Name' required={true} className='mainFooter-contactSection-name' />
 
           <input
             type='email'
             placeholder='Email Address'
-            required='true'
+            required={true}
             className='mainFooter-contactSection-email'
           />
 
-          <select required='true' className='mainFooter-contactSection-services'>
+          <select required={true} className='mainFooter-contactSection-services'>
             <option>-- services --</option>
             <option value='Web Editorial'>Web Editorial</option>
             <option value='Print Editorial'>Print Editorial</option>
@@ -41,7 +41,7 @@ export const Footer = () => {
             <option value='Something Else'>Something Else</option>
           </select>
 
-          <textarea placeholder='Message' required='true' className='mainFooter-contactSection-message'>
+          <textarea placeholder='Message' required={true} className='mainFooter-contactSection-message'>
           </textarea>
 
           <button className='mainFooter-contactSection-submit'>

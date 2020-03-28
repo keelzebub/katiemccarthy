@@ -16,20 +16,111 @@
   max-width: $page-width;
   margin: 0 auto;
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
 }
 
-.mainHeader-nav {
-  display: flex;
+.mainHeader-nav-toggle {
+  display: none;
 }
 
-a.mainHeader-nav-navItem,
-.mainHeader-nav-navItem {
-  padding: 0 12px;
-  color: #333;
+.mainHeader-nav-toggleLabel {
+  cursor: pointer;
+  display: none;
 
-  &:hover {
-    color: #666;
+  @include breakpoint(tabletLandscape) {
+    display: block;
+    z-index: 2;
+  }
+}
+
+.mainHeader-nav-list {
+  height: $header-height;
+  display: flex;
+  align-items: center;
+
+  @include breakpoint(tabletLandscape) {
+    position: absolute;
+    top: $header-height;
+    width: 100%;
+    height: auto;
+    padding: 5%;
+    max-height: 0px;
+    display: inline-block;
+    z-index: 1;
+    overflow: hidden;
+    border-top: 3px solid $link-color-dark;
+    background: $header-color;
+    transform-origin: 0% 0%;
+    transform: scaleY(0);
+    transition: all 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+}
+
+@include breakpoint(tabletLandscape) {
+  .mainHeader-nav-list--open {
+    max-height: 1000px;
+    transform: scaleY(1);
+  }
+}
+
+.mainHeader-nav-list-subList {
+  display: none;
+  position: absolute;
+  top: $header-height;
+  background: $header-color;
+  width: 250px;
+  border-top: 3px solid $link-color-dark;
+
+  .mainHeader-nav-list-listItem {
+    padding: 12px 5%;
+  }
+
+  @include breakpoint(tabletLandscape) {
+    position: relative;
+    width: auto;
+    top: 0;
+    display: block;
+    border-top: none;
+
+    .mainHeader-nav-list-listItem {
+      padding: 0 5%;
+    }
+  }
+}
+
+.mainHeader-nav-list-listItem {
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  @include breakpoint(tabletLandscape) {
+    height: auto;
+    display: block;
+  }
+
+  &:hover .mainHeader-nav-list-subList {
+    display: block;
+  }
+
+  a {
+    display: block;
+    padding: 0 12px;
+    color: #333;
+
+    &:hover {
+      opacity: 0.7;
+
+      @include breakpoint(tabletLandscape) {
+        background-color: rgba(0, 0, 0, 0.03);
+      }
+    }
+
+    @include breakpoint(tabletLandscape) {
+      padding: 10px 5%;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+    }
   }
 }

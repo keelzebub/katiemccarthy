@@ -17,7 +17,7 @@ export const Main = () => {
 
   const buildServiceItem = (service) => {
     return (
-      <article className='main-services-list-item'>
+      <article className='main-services-list-item' key={service.name}>
         <img src={service.icon} alt={service.name} />
         <h4>{service.name}</h4>
         <p>{service.description}</p>

@@ -1,0 +1,17 @@
+.button--noStyles {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  min-width: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  cursor: pointer;
+  transition: none;
+  text-align: inherit;
+
+  &:hover {
+    background: inherit;
+  }
+}

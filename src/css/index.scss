@@ -2,8 +2,18 @@
 @import 'global/normalize';
 @import 'global/variables';
 @import 'global/mixins';
+@import 'global/buttons';
 @import 'global/base';
 @import 'global/icons';
+
+// Vendor
+$hamburger-padding-x: 0;
+$hamburger-padding-y: 0;
+$hamburger-layer-width: 20px;
+$hamburger-layer-height: 2px;
+$hamburger-layer-spacing: 4px;
+$hamburger-layer-color: $link-color-dark;
+@import 'vendor/hamburgers/hamburgers';
 
 // Layout
 @import 'layout/header';
