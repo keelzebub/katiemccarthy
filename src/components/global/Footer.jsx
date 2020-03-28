@@ -17,15 +17,23 @@ export const Footer = () => {
           <SocialMediaIcons classes='mainFooter-socialSection-socialIcons' />
         </section>
 
-        <section className='mainFooter-contactSection'>
-          <input type='text' placeholder='Name' required={true} className='mainFooter-contactSection-name' />
+        <form className='mainFooter-contactSection' data-netlify='true' name='contact'>
 
-          <input
-            type='email'
-            placeholder='Email Address'
-            required={true}
-            className='mainFooter-contactSection-email'
-          />
+          <div className='mainFooter-contactSection-subSection'>
+            <input
+              type='text'
+              placeholder='Name'
+              required={true}
+              className='mainFooter-contactSection-name'
+            />
+
+            <input
+              type='email'
+              placeholder='Email Address'
+              required={true}
+              className='mainFooter-contactSection-email'
+            />
+          </div>
 
           <select required={true} className='mainFooter-contactSection-services'>
             <option>-- services --</option>
@@ -44,12 +52,12 @@ export const Footer = () => {
           <textarea placeholder='Message' required={true} className='mainFooter-contactSection-message'>
           </textarea>
 
-          <button className='button--black'>
+          <button className='button--black mainFooter-contactSection-submit' type='submit'>
             <span className='button-inner'>
               Submit
             </span>
           </button>
-        </section>
+        </form>
       </section>
     </footer>
   );

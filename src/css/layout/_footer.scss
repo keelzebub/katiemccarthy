@@ -35,7 +35,7 @@
 .mainFooter-contactSection {
   width: 49%;
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
 
@@ -44,14 +44,31 @@
   }
 }
 
+.mainFooter-contactSection-subSection {
+  display: flex;
+  justify-content: space-between;
+
+  @include breakpoint(tabletPortrait) {
+    flex-direction: column;
+  }
+}
+
 .mainFooter-contactSection-name {
   width: 49%;
   margin-bottom: 12px;
+
+  @include breakpoint(tabletPortrait) {
+    width: 100%;
+  }
 }
 
 .mainFooter-contactSection-email {
   width: 49%;
   margin-bottom: 12px;
+
+  @include breakpoint(tabletPortrait) {
+    width: 100%;
+  }
 }
 
 .mainFooter-contactSection-services {
@@ -63,4 +80,8 @@
   width: 100%;
   min-height: 150px;
   margin-bottom: 12px;
+}
+
+.mainFooter-contactSection-submit {
+  align-self: flex-end;
 }
