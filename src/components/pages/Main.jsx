@@ -28,8 +28,10 @@ export const Main = () => {
   return (
     <main className='page page--main'>
       <section className='main-hero'>
-        <img src={hero} className='main-hero-img' alt='typewriter' />
-        <h1>Katie McCarthy</h1>
+        <div>
+          <img src={hero} className='main-hero-img' alt='typewriter' />
+          <h1>Katie McCarthy</h1>
+        </div>
         <a href='#featuredWork'>
           <Icon name='icon-down-button' classes='main-hero-button' />
         </a>
@@ -60,9 +62,9 @@ export const Main = () => {
         </section>
       </section>
 
-      <img src={typewriterDivider} className='main-divider' alt='divider' />
+      <img src={typewriterDivider} className='main-divider' alt='divider' id='about' />
 
-      <section className='main-about' id='about'>
+      <section className='main-about'>
         <article className='main-about-picture'>
           <img src={profilePicture} alt="Katie McCarthy" width='225' height='225' />
         </article>
@@ -97,9 +99,9 @@ export const Main = () => {
 
       <TestimonialsWidget />
 
-      <img src={goldDivider} className='main-divider' alt='divider' />
+      <img src={goldDivider} className='main-divider' alt='divider' id='services' />
 
-      <section className='main-services' id='services'>
+      <section className='main-services'>
         <h1>Services</h1>
         <section className='main-services-list'>
           {services.map((service) => buildServiceItem(service))}

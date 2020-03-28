@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import logo from '../../images/logo.png';
 
 export const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const hamburgerClasses = classNames({
     'mainHeader-nav-toggleLabel': true,
@@ -51,8 +51,8 @@ export const Header = () => {
               </li>
             </ul>
           </li>
-          <li className='mainHeader-nav-list-listItem'><Link to='/#about'>About</Link></li>
-          <li className='mainHeader-nav-list-listItem'><Link to='/#services'>Services</Link></li>
+          <li className='mainHeader-nav-list-listItem'><a href='/#about'>About</a></li>
+          <li className='mainHeader-nav-list-listItem'><a href='/#services'>Services</a></li>
           <li className='mainHeader-nav-list-listItem'><Link to='/resume'>Resumé</Link></li>
           <li className='mainHeader-nav-list-listItem'><Link to='/hire-me'>Hire Me</Link></li>
         </ul>

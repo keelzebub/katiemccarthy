@@ -28,6 +28,7 @@
 .mainHeader-nav-toggleLabel {
   cursor: pointer;
   display: none;
+  line-height: normal;
 
   @include breakpoint(tabletLandscape) {
     display: block;

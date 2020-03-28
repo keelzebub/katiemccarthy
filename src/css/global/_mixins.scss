@@ -23,3 +23,12 @@
     @media (max-width: $b-mobile)  { @content; }
   }
 }
+
+@function encodeColor($string) {
+	@if type-of($string) == 'color' {
+        $hex: str-slice(ie-hex-str($string), 4);
+        $string:unquote("#{$hex}");
+    }
+    $string: '%23' + $string;
+	@return $string;
+}

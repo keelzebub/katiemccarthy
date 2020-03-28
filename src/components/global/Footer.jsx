@@ -44,8 +44,10 @@ export const Footer = () => {
           <textarea placeholder='Message' required={true} className='mainFooter-contactSection-message'>
           </textarea>
 
-          <button className='mainFooter-contactSection-submit'>
-            Submit
+          <button className='button--black'>
+            <span className='button-inner'>
+              Submit
+            </span>
           </button>
         </section>
       </section>

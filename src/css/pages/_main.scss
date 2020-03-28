@@ -11,16 +11,16 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
 
   @include breakpoint(tabletLandscape) {
-    height: auto;
-    padding-bottom: 0;
+    min-height: 0;
   }
 }
 
 .main-hero-img {
-  width: 810px;
-  height: 415px;
+  width: 711px;
+  // height: 415px;
 
   @include breakpoint(tabletLandscape) {
     width: 80%;
@@ -34,12 +34,12 @@
 }
 
 .main-hero-button {
-  width: 50px;
-  height: 50px;
+  width: 46px;
+  height: 46px;
 
-  @include breakpoint(tabletLandscape) {
-    display: none;
-  }
+  // @include breakpoint(tabletLandscape) {
+  //   display: none;
+  // }
 }
 
 // Featured Work section

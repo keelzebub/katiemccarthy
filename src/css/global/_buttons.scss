@@ -1,3 +1,71 @@
+@mixin button(
+  $background-color: #ffd000,
+  $text-color: #b28e00,
+  $background-hover-color: #ffd000,
+  $text-hover-color: #b28e00
+) {
+  display: flex;
+  align-items: center;
+  padding: 6px 20px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 34px;
+  border-radius: 50px;
+  background-color: $background-color;
+  color: $text-color;
+  border: none;
+  transition: all 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+  .button-inner {
+    z-index: 2;
+    background: $background-color;
+    transition: all 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+
+  &:after {
+    content: url('data:image/svg+xml; utf8, <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.17166 13.8237C8.39975 14.0588 8.76749 14.0588 8.99558 13.8237L12.8638 9.83813C13.0454 9.65108 13.0454 9.34892 12.8638 9.16187L8.99558 5.17626C8.76749 4.94125 8.39975 4.94125 8.17166 5.17626C7.94356 5.41127 7.94356 5.79017 8.17166 6.02518L11.5418 9.5024L8.167 12.9796C7.94356 13.2098 7.94356 13.5935 8.17166 13.8237V13.8237Z" fill="#{encodeColor($text-hover-color)}" /><circle cx="9.5" cy="9.5" r="9" transform="rotate(-90 9.5 9.5)" stroke="#{encodeColor($text-hover-color)}" /></svg>');
+    display: inline-block;
+    padding-top: 1px;
+    height: 19px;
+    width: 19px;
+    line-height: normal;
+    z-index: 1;
+    margin-left: -19px;
+    transition: all 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+
+  &:hover {
+    opacity: .8;
+    background-color: $background-hover-color;
+
+    .button-inner {
+      background-color: $background-hover-color;
+      color: $text-hover-color;
+    }
+
+    &:after {
+      margin-left: 8px;
+    }
+  }
+}
+
+.button {
+  @include button(#ffd000, #b28e00, #000, #fff);
+}
+
+.button--black {
+  @include button;
+  @include button(#000, $header-color, #000, $header-color);
+
+  &:after {
+    content: url('data:image/svg+xml; utf8, <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.17166 13.8237C8.39975 14.0588 8.76749 14.0588 8.99558 13.8237L12.8638 9.83813C13.0454 9.65108 13.0454 9.34892 12.8638 9.16187L8.99558 5.17626C8.76749 4.94125 8.39975 4.94125 8.17166 5.17626C7.94356 5.41127 7.94356 5.79017 8.17166 6.02518L11.5418 9.5024L8.167 12.9796C7.94356 13.2098 7.94356 13.5935 8.17166 13.8237V13.8237Z" fill="#{encodeColor($header-color)}" /><circle cx="9.5" cy="9.5" r="9" transform="rotate(-90 9.5 9.5)" stroke="#{encodeColor($header-color)}" /></svg>');
+  }
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
 .button--noStyles {
   padding: 0;
   border: none;
