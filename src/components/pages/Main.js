@@ -23,10 +23,10 @@ export const Main = () => {
         <p>{service.description}</p>
       </article>
     );
-  }
+  };
 
   return (
-    <main className='page page--main'>
+    <main className='page'>
       <section className='main-hero'>
         <div>
           <img src={hero} className='main-hero-img' alt='typewriter' />
@@ -37,7 +37,7 @@ export const Main = () => {
         </a>
       </section>
 
-      <img src={goldDivider} className='main-divider' alt='divider' id='featuredWork' />
+      <img src={goldDivider} className='divider' alt='divider' id='featuredWork' />
 
       <section className='main-featuredWork'>
         <h1>Featured Work</h1>
@@ -62,11 +62,11 @@ export const Main = () => {
         </section>
       </section>
 
-      <img src={typewriterDivider} className='main-divider' alt='divider' id='about' />
+      <img src={typewriterDivider} className='divider' alt='divider' id='about' />
 
       <section className='main-about'>
         <article className='main-about-picture'>
-          <img src={profilePicture} alt="Katie McCarthy" width='225' height='225' />
+          <img src={profilePicture} alt='Katie McCarthy' width='225' height='225' />
         </article>
         <article className='main-about-profile'>
           <h2>I’m Katie and I’m a writer based in Portland, Oregon.</h2>
@@ -95,11 +95,11 @@ export const Main = () => {
         </article>
       </section>
 
-      <img src={goldDivider} className='main-divider' alt='divider' />
+      <img src={goldDivider} className='divider' alt='divider' />
 
       <TestimonialsWidget />
 
-      <img src={goldDivider} className='main-divider' alt='divider' id='services' />
+      <img src={goldDivider} className='divider' alt='divider' id='services' />
 
       <section className='main-services'>
         <h1>Services</h1>

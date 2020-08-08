@@ -9,7 +9,7 @@ export const Header = () => {
 
   const hamburgerClasses = classNames({
     'mainHeader-nav-toggleLabel': true,
-    'hamburger': true,
+    hamburger: true,
     'hamburger--spin': true,
     'is-active': menuOpen,
   });
@@ -21,12 +21,14 @@ export const Header = () => {
 
   const toggleMenuHandler = () => {
     setMenuOpen(!menuOpen);
-  }
+  };
 
   return (
     <header className='mainHeader'>
       <section className='mainHeader-content'>
-        <img src={logo} alt='Katie McCarthy' height='30' width='200' />
+        <Link to='/' className='mainHeader-content-logo'>
+          <img src={logo} alt='Katie McCarthy' height='30' width='200' />
+        </Link>
         <button className={hamburgerClasses} onClick={toggleMenuHandler}>
           <span className='hamburger-box'>
             <span className='hamburger-inner'></span>
@@ -40,12 +42,12 @@ export const Header = () => {
             </Link>
             <ul className='mainHeader-nav-list-subList'>
               <li className='mainHeader-nav-list-listItem'>
-                <Link to='/portfolio/editorial-content'>
+                <Link to='/editorial-content' onClick={toggleMenuHandler}>
                   Editorial Content
                 </Link>
               </li>
               <li className='mainHeader-nav-list-listItem'>
-                <Link to='/portfolio/branded-content'>
+                <Link to='/branded-content' onClick={toggleMenuHandler}>
                   Branded Content
                 </Link>
               </li>

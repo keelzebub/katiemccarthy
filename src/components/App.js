@@ -7,6 +7,7 @@ import {
 
 import { HireMe } from './pages/HireMe';
 import { Main } from './pages/Main';
+import { ContentIndex } from './pages/ContentIndex';
 
 import { Header } from './global/Header';
 import { Footer } from './global/Footer';
@@ -19,8 +20,18 @@ function App() {
 
       <Switch>
         <Route path='/resume'></Route>
-        <Route path='/hire-me'><HireMe /></Route>
-        <Route path='/'><Main /></Route>
+        <Route path='/editorial-content'>
+          <ContentIndex type='editorial' />
+        </Route>
+        <Route path='/branded-content'>
+          <ContentIndex type='branded' />
+        </Route>
+        <Route path='/hire-me'>
+          <HireMe />
+        </Route>
+        <Route path='/'>
+          <Main />
+        </Route>
       </Switch>
 
       <Footer />

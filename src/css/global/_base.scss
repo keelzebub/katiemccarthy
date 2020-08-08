@@ -5,10 +5,12 @@
 html {
   height: 100%;
   scroll-behavior: smooth;
+  background-color: $header-color;
 }
 
 body {
   margin: 0;
+  background-color: white;
   font-size: 14px;
   font-family: 'Arvo', Georgia, "Times New Roman", serif;
   line-height: 1.7em;
@@ -102,4 +104,9 @@ select {
   max-width: $page-width;
   margin: 0 auto;
   padding-top: $header-height;
+}
+
+.divider {
+  width: 100%;
+  margin: 54px 0;
 }

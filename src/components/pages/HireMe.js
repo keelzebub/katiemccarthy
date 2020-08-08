@@ -1,5 +1,5 @@
 import React from 'react';
 
 export const HireMe = () => {
-  return <main></main>;
-}
+  return <main className='page'></main>;
+};

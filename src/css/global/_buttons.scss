@@ -3,9 +3,9 @@ $button-transition: all 0.2s ease;
 
 @mixin button(
   $background-color: #ffd000,
-  $text-color: #b28e00,
+  $text-color: white,
   $background-hover-color: #ffd000,
-  $text-hover-color: #b28e00
+  $text-hover-color: white
 ) {
   display: flex;
   align-items: center;
@@ -15,7 +15,7 @@ $button-transition: all 0.2s ease;
   line-height: 34px;
   border-radius: 50px;
   background-color: $background-color;
-  color: $text-color;
+  color: $text-color !important;
   border: none;
   transition: $button-transition;
 
@@ -34,6 +34,7 @@ $button-transition: all 0.2s ease;
     line-height: normal;
     z-index: 1;
     margin-left: -19px;
+    opacity: 0;
     transition: $button-transition;
   }
 
@@ -43,21 +44,21 @@ $button-transition: all 0.2s ease;
 
     .button-inner {
       background-color: $background-hover-color;
-      color: $text-hover-color;
+      color: $text-hover-color !important;
     }
 
     &:after {
       margin-left: 8px;
+      opacity: 1;
     }
   }
 }
 
 .button {
-  @include button(#ffd000, #b28e00, #000, #fff);
+  @include button(#ffd000, white, #000, white);
 }
 
 .button--black {
-  @include button;
   @include button(#000, $header-color, #000, $header-color);
 }
 
