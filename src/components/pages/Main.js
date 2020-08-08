@@ -40,7 +40,7 @@ export const Main = () => {
       <img src={goldDivider} className='divider' alt='divider' id='featuredWork' />
 
       <section className='main-featuredWork'>
-        <h1>Featured Work</h1>
+        <h2>Featured Work</h2>
         <section className='main-featuredWork-links'>
           <Link className='main-featuredWork-link' to='/editorial-content'>Editorial Content</Link>
           |
@@ -102,7 +102,7 @@ export const Main = () => {
       <img src={goldDivider} className='divider' alt='divider' id='services' />
 
       <section className='main-services'>
-        <h1>Services</h1>
+        <h2>Services</h2>
         <section className='main-services-list'>
           {services.map((service) => buildServiceItem(service))}
         </section>

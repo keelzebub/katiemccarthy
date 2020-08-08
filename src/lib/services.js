@@ -12,46 +12,46 @@ export default [
   {
     name: 'Web Editorial',
     icon: webEditorial,
-    description: 'Irresistibly clickable beauty, fashion and other lifestyle content'
+    description: 'Irresistibly clickable beauty, fashion and other lifestyle content',
   },
   {
     name: 'Print Editorial',
     icon: printEditorial,
-    description: 'Smart, timely features conceived to showcase beautiful photography and design'
+    description: 'Smart, timely features conceived to showcase beautiful photography and design',
   },
   {
     name: 'Editing',
     icon: editing,
-    description: 'Line editing, copyediting and proofreading informed by 13 years in the biz'
+    description: 'Line editing, copyediting and proofreading informed by 13 years in the biz',
   },
   {
     name: 'Content Marketing',
     icon: contentMarketing,
-    description: 'Canny content strategy and creation for your growing business'
+    description: 'Canny content strategy and creation for your growing business',
   },
   {
     name: 'Email Marketing',
     icon: emailMarketing,
-    description: 'Engaging emails that beg to be opened and boost conversion'
+    description: 'Engaging emails that beg to be opened and boost conversion',
   },
   {
     name: 'Corporate Blogs',
     icon: corporateBlogs,
-    description: 'Must-read posts that bolster your rep as an industry authority and produce leads'
+    description: 'Must-read posts that bolster your rep as an industry authority and produce leads',
   },
   {
     name: 'Sponsored Content',
     icon: sponsoredContent,
-    description: "Your client's messaging, cleverly packaged — without that sponsored-content scent"
+    description: "Your client's messaging, cleverly packaged — without that sponsored-content scent",
   },
   {
     name: 'Web Copy',
     icon: webCopy,
-    description: 'Optimized website content that communicates your brand value'
+    description: 'Optimized website content that communicates your brand value',
   },
   {
     name: 'Public Relations',
     icon: publicRelations,
-    description: "Intriguing press releases and catchy pitch emails — because I've seen 'em all"
+    description: "Intriguing press releases and catchy pitch emails — because I've seen 'em all",
   },
-]
+];

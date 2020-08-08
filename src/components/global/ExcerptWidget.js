@@ -19,7 +19,8 @@ export const ExcerptWidget = ({image, title, excerpt, link}) => {
 };
 
 ExcerptWidget.propTypes = {
+  excerpt: PropTypes.string,
   image: PropTypes.string,
   title: PropTypes.string,
   link: PropTypes.string,
-}
+};

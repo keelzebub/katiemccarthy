@@ -1,0 +1,54 @@
+.article-hero {
+  padding: 50px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.article-hero-img {
+  width: 711px;
+
+  @include breakpoint(tabletLandscape) {
+    width: 80%;
+    height: auto;
+  }
+
+  @include breakpoint(tabletPortrait) {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.article-hero-title {
+  margin: 24px 0;
+  text-transform: capitalize;
+}
+
+.article-details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  @include breakpoint(tabletPortrait) {
+    flex-direction: column;
+  }
+}
+
+.article-details-card:first-child {
+  flex: 1 0 66%;
+  margin-right: 36px;
+}
+
+.article-details-card:last-child {
+  flex: 1 0 33%;
+
+  @include breakpoint(tabletPortrait) {
+    margin-top: 36px;
+  }
+}
+
+.article-button {
+  margin: 24px 0 48px;
+}

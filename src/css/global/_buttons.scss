@@ -7,7 +7,7 @@ $button-transition: all 0.2s ease;
   $background-hover-color: #ffd000,
   $text-hover-color: white
 ) {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   padding: 6px 20px;
   font-size: 20px;

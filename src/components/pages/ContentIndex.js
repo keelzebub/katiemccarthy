@@ -7,7 +7,7 @@ import { TestimonialsWidget } from '../global/TestimonialsWidget';
 import { ExcerptWidget } from '../global/ExcerptWidget';
 import goldDivider from '../../images/gold-divider.png';
 
-export const ContentIndex = ({type}) => {
+export const ContentIndex = ({type, content}) => {
   return (
     <main className='page'>
       <section className='contentIndex-hero'>
@@ -19,33 +19,16 @@ export const ContentIndex = ({type}) => {
       </section>
 
       <section className='contentIndex-excerpts'>
-        <ExcerptWidget
-          title='Lightspeed Email Marketing - 1'
-          excerpt='Project Overview Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure'
-        />
-        <ExcerptWidget
-          title='Lightspeed Email Marketing – 2'
-          excerpt='Project Overview Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure'
-        />
-        <ExcerptWidget
-          title='Lightspeed Email Marketing – 3'
-          excerpt='Project Overview Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure'
-        />
-
-        <ExcerptWidget
-          title='Lightspeed Email Marketing – 3'
-          excerpt='Project Overview Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore'
-        />
-
-        <ExcerptWidget
-          title='Lightspeed Email Marketing – 3'
-          excerpt='Project Overview Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure'
-        />
-
-        <ExcerptWidget
-          title='Lightspeed Email Marketing – 3'
-          excerpt='Project Overview Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation'
-        />
+        {
+          content.map((article) => (
+            <ExcerptWidget
+              key={article.seo}
+              title={article.page_title}
+              excerpt={article.overview}
+              link={`/${type}-content/${article.seo}`}
+            />
+          ))
+        }
       </section>
 
       <img src={goldDivider} className='divider' alt='divider' />
@@ -58,5 +41,6 @@ export const ContentIndex = ({type}) => {
 };
 
 ContentIndex.propTypes = {
+  content: PropTypes.array.isRequired,
   type: PropTypes.string.isRequired,
 };
