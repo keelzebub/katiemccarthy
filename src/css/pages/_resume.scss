@@ -1,0 +1,43 @@
+.resume-hero {
+  padding: 48px 0 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.resume-hero-img {
+  width: 711px;
+
+  @include breakpoint(tabletLandscape) {
+    width: 80%;
+    height: auto;
+  }
+
+  @include breakpoint(tabletPortrait) {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.resume-button {
+  margin: 24px 0;
+  text-transform: capitalize;
+}
+
+.resume-container {
+  margin-bottom: 48px;
+  display: grid;
+  grid-template-columns: [section-title] 1fr [section-content] 2fr;
+  grid-template-rows: auto;
+  grid-gap: 24px 36px;
+}
+
+.resume-container-sectionTitle {
+  grid-column-start: section-title;
+}
+
+.resume-container-sectionContent {
+  grid-column-start: section-content;
+}

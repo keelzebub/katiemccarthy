@@ -10,6 +10,7 @@ import { HireMe } from './pages/HireMe';
 import { Main } from './pages/Main';
 import { ContentIndex } from './pages/ContentIndex';
 import { Article } from './pages/Article';
+import { Resume } from './pages/Resume';
 import { Header } from './global/Header';
 import { Footer } from './global/Footer';
 import '../css/index.scss';
@@ -24,7 +25,6 @@ function App() {
       <Header />
 
       <Switch>
-        <Route path='/resume'></Route>
         {
           editorialContent.map((content) => (
             <Route key={content.seo} path={`/editorial-content/${content.seo}`}>
@@ -47,6 +47,9 @@ function App() {
         </Route>
         <Route path='/hire-me'>
           <HireMe />
+        </Route>
+        <Route path='/resume'>
+          <Resume />
         </Route>
         <Route path='/'>
           <Main />

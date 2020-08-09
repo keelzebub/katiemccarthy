@@ -6,6 +6,8 @@ import { TestimonialsWidget } from '../global/TestimonialsWidget';
 import { SocialMediaIcons } from '../global/SocialMediaIcons';
 import { Icon } from '../global/Icon';
 
+import brandedContent from '../../lib/branded-content.json';
+import editorialContent from '../../lib/editorial-content.json';
 import services from '../../lib/services';
 
 import hero from '../../images/hero.png';
@@ -14,7 +16,6 @@ import goldDivider from '../../images/gold-divider.png';
 import profilePicture from '../../images/profile-picture.jpg';
 
 export const Main = () => {
-
   const buildServiceItem = (service) => {
     return (
       <article className='main-services-list-item' key={service.name}>
@@ -24,6 +25,15 @@ export const Main = () => {
       </article>
     );
   };
+
+  const buildExcerpt = (type, article) => (
+    <ExcerptWidget
+      key={article.seo}
+      title={[article.publication, article.title].join(' — ')}
+      excerpt={article.overview}
+      link={`/${type}-content/${article.seo}`}
+    />
+  );
 
   return (
     <main className='page'>
@@ -47,18 +57,22 @@ export const Main = () => {
           <Link className='main-featuredWork-link' to='/branded-content'>Branded Content</Link>
         </section>
         <section className='main-featuredWork-excerpts'>
-          <ExcerptWidget
-            title='Lightspeed Email Marketing - 1'
-            excerpt='Project Overview Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure'
-          />
-          <ExcerptWidget
-            title='Lightspeed Email Marketing – 2'
-            excerpt='Project Overview Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure'
-          />
-          <ExcerptWidget
-            title='Lightspeed Email Marketing – 3'
-            excerpt='Project Overview Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure'
-          />
+          {
+            brandedContent.map((article) => {
+              if (article.featured) {
+                return buildExcerpt('branded', article);
+              }
+              return null;
+            })
+          }
+          {
+            editorialContent.map((article) => {
+              if (article.featured) {
+                return buildExcerpt('editorial', article);
+              }
+              return null;
+            })
+          }
         </section>
       </section>
 
