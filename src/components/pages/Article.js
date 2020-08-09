@@ -18,6 +18,22 @@ export const Article = ({type, content}) => {
 
   fetchArticle(content.markdown_file);
 
+  let link = null;
+
+  if (content.link && content.link.match(/^http/)) {
+    link = (
+      <a href={content.link} className='button article-button' target='_blank' rel='noopener noreferrer'>
+        {content.link_name || 'View full article'}
+      </a>
+    );
+  } else if (content.link) {
+    link = (
+      <Link to={content.link} className='button article-button'>
+        {content.link_name || 'View full article'}
+      </Link>
+    );
+  }
+
   return (
     <main className='page'>
       <section className='article-hero'>
@@ -57,9 +73,7 @@ export const Article = ({type, content}) => {
         <ReactMarkdown source={articleContent} />
       </section>
 
-      <Link to={content.link} className='button article-button'>
-        {content.link_name || 'View full article'}
-      </Link>
+      {link}
     </main>
   );
 };

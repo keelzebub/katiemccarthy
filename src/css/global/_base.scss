@@ -29,6 +29,7 @@ code {
 
 ul {
   padding: 0 18px;
+  color: #666;
 }
 
 ol {
@@ -41,6 +42,7 @@ h1 {
   margin: 0;
   line-height: 1.4em;
   padding-bottom: 12px;
+  color: #333;
 }
 
 h2 {
@@ -49,6 +51,7 @@ h2 {
   margin: 0;
   line-height: 1.4em;
   padding-bottom: 12px;
+  color: #333;
 }
 
 h3 {
@@ -57,6 +60,7 @@ h3 {
   margin: 0;
   line-height: 1.4em;
   padding-bottom: 12px;
+  color: #333;
 }
 
 h4 {
@@ -64,6 +68,23 @@ h4 {
   font-weight: normal;
   margin: 0;
   line-height: 1.4em;
+  color: #333;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0 0 24px;
+  line-height: 1.4em;
+  color: #333;
+}
+
+h6 {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.4em;
+  color: #333;
 }
 
 a {

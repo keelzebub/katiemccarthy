@@ -4,6 +4,6 @@ Sorry, Mr. President: When it comes to fake news, CNN is not the problem. But th
 
 Everyone’s seen those articles peddling miracle cures for acne, wrinkles and gray hair. Sure, they’re silly. But, damn, do these articles make the rounds. Consider the story “Remove Sun Tan and Other Dark Spots Quickly Within 10 Minutes With These Tips,” which was shared on social media 41.8K times. A similar ‘magic pill’ article, “How to Grow Long, Thick Eyelashes & Eyebrows in Just Three Days,” was shared 27.5K times.
 
-And the advice in these fake news articles can be dangerously, jaw-droppingly misleading. These fake beauty news stories don’t just drive people to try weird DIY face masks and natural brow serums; some push unfounded treatments and “cures” for serious mental and physical illnesses, even life-threatening ones.
+And the advice in these fake news articles can be dangerously, jaw-droppingly misleading. These fake beauty news stories don’t just drive people to try weird DIY face masks and natural brow serums; some push unfounded treatments and “cures” for serious mental and physical illnesses, [even life-threatening ones](http://realfarmacy.com/national-cancer-institute-quiety-confirms-cannabis-cures-cancer/).
 
 We shared eight viral beauty and health news stories with experts to find out if any kernels of truth exist in these newsbytes — or if they’re as fake as Trump’s spray tan. Here’s what the professionals said.

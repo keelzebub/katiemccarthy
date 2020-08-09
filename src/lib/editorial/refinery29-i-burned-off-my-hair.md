@@ -10,15 +10,15 @@ When I stood up from her chair, the first few inches of my roots were a shocking
 
 At a time when so many other aspects of my life felt out of my control, my long, bouncy hair — which fell to about the middle of my back — literally fell apart. Whenever I brushed my tangled mass of freshly highlighted hair, quarter-inch-long wisps the color and texture of dandelion fuzz floated into the air and landed on my bathroom counter. After two weeks of this, the strands at the nape of my neck fell in a jagged line above my shoulders; the rest lingered, dry, brittle, and devastated.
 
-“WHEN THE HAIR STARTS TO TANGLE EASILY OR WHEN YOU NOTICE YOUR HAIR IS SIMPLY NOT GROWING DUE TO BREAKAGE, THIS IS WHEN YOU NEED TO HEAD TO YOUR LOCAL SALON FOR A HAIRCUT THAT TAKES ALL OF THE DEAD, SPLIT ENDS AWAY.”
+> “WHEN THE HAIR STARTS TO TANGLE EASILY OR WHEN YOU NOTICE YOUR HAIR IS SIMPLY NOT GROWING DUE TO BREAKAGE, THIS IS WHEN YOU NEED TO HEAD TO YOUR LOCAL SALON FOR A HAIRCUT THAT TAKES ALL OF THE DEAD, SPLIT ENDS AWAY.”
 
-TRACEY CUNNINGHAM
+> TRACEY CUNNINGHAM
 
 I asked Redken creative consultant Tracey Cunningham to explain exactly why my hair had given up this time. “[Hair] only breaks if you over-process,” Cunningham said. “Once the underlying pigments for white hair start overlapping, the hair becomes weak and ultimately breaks.”
 
 Real question: Would I have to chop it off? “When the hair starts to tangle easily or when you notice your hair is simply not growing due to breakage, this is when you need to head to your local salon for a haircut that takes all of the dead, split ends away.” Answer: Real question: Yes.
 
-Garren, renowned celebrity hairstylist and cofounder of R+Co, confirmed Cunningham’s assessment. “If it’s severely broken, a lot of girls want to hang on to long, broken hair,” he said, “[but] it’s not pretty at the bottom if it’s all shredded.”
+Garren, renowned celebrity hairstylist and cofounder of R+Co, confirmed Cunningham’s assessment. “If it’s severely broken, a lot of girls want to hang on to long, broken hair,” he said, “\[but\] it’s not pretty at the bottom if it’s all shredded.”
 
 And shredded it was. When I walked into my new salon, I was prepared to lop off the vast majority, but my stylist talked me down. She said that the damage was underneath several layers of (intact) hair and unnoticeable to most people. So I got a two-inch, all-around trim. Not so bad at all, right?
 
@@ -26,9 +26,9 @@ But the drama was far from over. One reality of having damaged hair: tangles lik
 
 So, with Cunningham and Garren’s help, I completely made over my styling routine. Garren pooh-poohed my favorite everyday styling product, Oribe Dry Finishing Spray. “Texturizing spray is definitely a no-no,” he told me. “It doesn’t take evenly on the hair, and it’ll make the hair get fuzzier at the ends.” I started relying on his recommendation, R+Co Park Avenue Blow Out Balm, to give my waves softness and very light hold. Cunningham prescribed hair oil (she likes Redken Diamond Oil), which made my fried, frayed ends a little sleeker.
 
-“I WOULDN’T HAVE GIVEN THE COLORIST WHO BURNED ME — ERR, MY HAIR — A SECOND CHANCE.”
+> “I WOULDN’T HAVE GIVEN THE COLORIST WHO BURNED ME — ERR, MY HAIR — A SECOND CHANCE.”
 
-KATIE MCCARTHY
+> KATIE MCCARTHY
 
 At both their suggestions, I got serious about hair masks. I made use of every bizarre product sample left over from my days as a beauty editor. When a publicist emailed me to ask if I wanted to test the Drybar’s new Bay Breeze Hydrating Shot, I jumped on it. “OMG, YES, PLEASE SEND NOW,” I wrote back. It was a balm for my hair and my ego.
 
