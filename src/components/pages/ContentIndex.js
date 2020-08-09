@@ -23,7 +23,7 @@ export const ContentIndex = ({type, content}) => {
           content.map((article) => (
             <ExcerptWidget
               key={article.seo}
-              title={article.page_title}
+              title={[article.publication, article.title].join(' — ')}
               excerpt={article.overview}
               link={`/${type}-content/${article.seo}`}
             />

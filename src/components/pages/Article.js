@@ -1,16 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import ReactMarkdown from 'react-markdown';
 
 import hero from '../../images/hero.png';
 import blackDivider from '../../images/black-divider.png';
 
-export const Article = ({content}) => {
+export const Article = ({type, content}) => {
+  const [articleContent, setArticleContent] = useState('');
+
+  const fetchArticle = async (path) => {
+    const articlePath = require(`../../lib/${type}/${path}`);
+    const response = await fetch(articlePath);
+    const articleText = await response.text();
+    setArticleContent(articleText);
+  };
+
+  fetchArticle(content.markdown_file);
+
   return (
     <main className='page'>
       <section className='article-hero'>
         <img src={hero} className='article-hero-img' alt='typewriter' />
-        <h1 className='article-hero-title'>{content.page_title}</h1>
+        <h1 className='article-hero-title'>
+          {[content.publication, content.title].join(' — ')}
+        </h1>
       </section>
 
       <img src={blackDivider} className='divider' alt='divider' />
@@ -20,14 +34,18 @@ export const Article = ({content}) => {
           content.overview &&
           <article className='article-details-card'>
             <h3>Project Overview</h3>
-            {content.overview}
+            <p>
+              {content.overview}
+            </p>
           </article>
         }
         {
           content.teams_and_roles &&
           <article className='article-details-card'>
             <h3>Teams/Roles</h3>
-            {content.teams_and_roles}
+            <p>
+              {content.teams_and_roles}
+            </p>
           </article>
         }
       </section>
@@ -35,19 +53,12 @@ export const Article = ({content}) => {
       <img src={blackDivider} className='divider' alt='divider' />
 
       <section className='article-content'>
-        <h2>{content.article_title}</h2>
-        {
-          content.content.split('\n').map((paragraph, index) => (
-            // eslint-disable-next-line react/no-array-index-key
-            <p key={index}>
-              {paragraph}
-            </p>
-          ))
-        }
+        <h2>{content.title}</h2>
+        <ReactMarkdown source={articleContent} />
       </section>
 
       <Link to={content.link} className='button article-button'>
-        View full article
+        {content.link_name || 'View full article'}
       </Link>
     </main>
   );
@@ -55,4 +66,5 @@ export const Article = ({content}) => {
 
 Article.propTypes = {
   content: PropTypes.object.isRequired,
+  type: PropTypes.string.isRequired,
 };

@@ -27,18 +27,19 @@ code {
     monospace;
 }
 
-ul,
+ul {
+  padding: 0 18px;
+}
+
 ol {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  padding: 0 18px;
 }
 
 h1 {
   font-size: 40px;
   font-weight: normal;
   margin: 0;
-  line-height: 1em;
+  line-height: 1.4em;
   padding-bottom: 12px;
 }
 
@@ -46,7 +47,7 @@ h2 {
   font-size: 30px;
   font-weight: normal;
   margin: 0;
-  line-height: 1em;
+  line-height: 1.4em;
   padding-bottom: 12px;
 }
 
@@ -54,7 +55,7 @@ h3 {
   font-size: 26px;
   font-weight: normal;
   margin: 0;
-  line-height: 1em;
+  line-height: 1.4em;
   padding-bottom: 12px;
 }
 
@@ -62,7 +63,7 @@ h4 {
   font-size: 22px;
   font-weight: normal;
   margin: 0;
-  line-height: 1em;
+  line-height: 1.4em;
 }
 
 a {
