@@ -126,7 +126,7 @@
   padding: 20px 0;
   text-align: center;
 
-  @include breakpoint(tabletPortrait) {
+  @include breakpoint(tabletLandscape) {
     width: 45%;
   }
 

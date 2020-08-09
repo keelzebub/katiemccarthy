@@ -53,10 +53,18 @@ export const Header = () => {
               </li>
             </ul>
           </li>
-          <li className='mainHeader-nav-list-listItem'><a href='/#about'>About</a></li>
-          <li className='mainHeader-nav-list-listItem'><a href='/#services'>Services</a></li>
-          <li className='mainHeader-nav-list-listItem'><Link to='/resume'>Resumé</Link></li>
-          <li className='mainHeader-nav-list-listItem'><Link to='/hire-me'>Hire Me</Link></li>
+          <li className='mainHeader-nav-list-listItem'>
+            <a href='/#about'>About</a>
+          </li>
+          <li className='mainHeader-nav-list-listItem'>
+            <a href='/#services'>Services</a>
+          </li>
+          <li className='mainHeader-nav-list-listItem'>
+            <Link to='/resume'>Resumé</Link>
+          </li>
+          <li className='mainHeader-nav-list-listItem'>
+            <Link to='/hire-me'>Hire Me</Link>
+          </li>
         </ul>
       </section>
     </header>

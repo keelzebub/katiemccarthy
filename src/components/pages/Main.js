@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import { ExcerptWidget } from '../global/ExcerptWidget';
@@ -34,6 +34,15 @@ export const Main = () => {
       link={`/${type}-content/${article.seo}`}
     />
   );
+
+  // use smooth scrolling on the main page
+  useEffect(() => {
+    document.getElementsByTagName('html')[0].style.scrollBehavior = 'smooth';
+
+    return () => {
+      document.getElementsByTagName('html')[0].style.scrollBehavior = 'auto';
+    };
+  });
 
   return (
     <main className='page'>
