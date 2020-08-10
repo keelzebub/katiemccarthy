@@ -30,6 +30,7 @@ export const Footer = () => {
           <div className='mainFooter-contactSection-subSection'>
             <input
               type='text'
+              name='name'
               placeholder='Name'
               required={true}
               className='mainFooter-contactSection-name'
@@ -37,6 +38,7 @@ export const Footer = () => {
 
             <input
               type='email'
+              name='email'
               placeholder='Email Address'
               required={true}
               className='mainFooter-contactSection-email'
