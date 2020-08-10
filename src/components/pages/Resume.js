@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import hero from '../../images/hero.png';
 
@@ -12,9 +11,13 @@ export const Resume = () => {
           <h1>Katie McCarthy</h1>
           <h2>Content Marketing Manager</h2>
         </div>
-        <Link to='/Katie-McCarthys-Resume.pdf' className='button resume-button'>
+        <a
+          href='/Katie-McCarthys-Resume.pdf'
+          className='button resume-button'
+          target='_blank' rel='noopener noreferrer'
+        >
           Download Resume
-        </Link>
+        </a>
       </section>
 
       <section className='resume-container'>

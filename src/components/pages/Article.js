@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 
 import hero from '../../images/hero.png';
@@ -20,17 +19,11 @@ export const Article = ({type, content}) => {
 
   let link = null;
 
-  if (content.link && content.link.match(/^http/)) {
+  if (content.link) {
     link = (
       <a href={content.link} className='button article-button' target='_blank' rel='noopener noreferrer'>
         {content.link_name || 'View full article'}
       </a>
-    );
-  } else if (content.link) {
-    link = (
-      <Link to={content.link} className='button article-button'>
-        {content.link_name || 'View full article'}
-      </Link>
     );
   }
 
