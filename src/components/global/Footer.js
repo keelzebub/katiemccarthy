@@ -17,9 +17,15 @@ export const Footer = () => {
           <SocialMediaIcons classes='mainFooter-socialSection-socialIcons' />
         </section>
 
-        <form className='mainFooter-contactSection' data-netlify='true' name='contact'>
+        <form
+          className='mainFooter-contactSection'
+          data-netlify='true'
+          name='contact'
+          method='post'
+          enctype='application/x-www-form-urlencoded'
+        >
           {/* this hidden field is required for Netlify form to work */}
-          {/* <input type='hidden' name='form-name' value='contact' /> */}
+          <input type='hidden' name='form-name' value='contact' />
 
           <div className='mainFooter-contactSection-subSection'>
             <input
