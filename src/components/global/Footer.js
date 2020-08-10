@@ -18,6 +18,8 @@ export const Footer = () => {
         </section>
 
         <form className='mainFooter-contactSection' data-netlify='true' name='contact'>
+          {/* this hidden field is required for Netlify form to work */}
+          <input type='hidden' name='form-name' value='contact' />
 
           <div className='mainFooter-contactSection-subSection'>
             <input
@@ -35,7 +37,7 @@ export const Footer = () => {
             />
           </div>
 
-          <select required={true} className='mainFooter-contactSection-services'>
+          <select required={true} className='mainFooter-contactSection-services' name='service'>
             <option>-- services --</option>
             <option value='Web Editorial'>Web Editorial</option>
             <option value='Print Editorial'>Print Editorial</option>
@@ -49,7 +51,7 @@ export const Footer = () => {
             <option value='Something Else'>Something Else</option>
           </select>
 
-          <textarea placeholder='Message' required={true} className='mainFooter-contactSection-message'>
+          <textarea placeholder='Message' name='message' required={true} className='mainFooter-contactSection-message'>
           </textarea>
 
           <button className='button--black mainFooter-contactSection-submit' type='submit'>
