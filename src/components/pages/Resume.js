@@ -12,7 +12,7 @@ export const Resume = () => {
           <h1>Katie McCarthy</h1>
           <h2>Content Marketing Manager</h2>
         </div>
-        <Link to='/Katie-McCarthys-Résumé.pdf' className='button resume-button'>
+        <Link to='/Katie-McCarthys-Resume.pdf' className='button resume-button'>
           Download Resume
         </Link>
       </section>
