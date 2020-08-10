@@ -19,7 +19,7 @@ export const Footer = () => {
 
         <form className='mainFooter-contactSection' data-netlify='true' name='contact'>
           {/* this hidden field is required for Netlify form to work */}
-          <input type='hidden' name='form-name' value='contact' />
+          {/* <input type='hidden' name='form-name' value='contact' /> */}
 
           <div className='mainFooter-contactSection-subSection'>
             <input
