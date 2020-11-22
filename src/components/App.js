@@ -10,7 +10,7 @@ import { HireMe } from './pages/HireMe';
 import { Main } from './pages/Main';
 import { ContentIndex } from './pages/ContentIndex';
 import { Article } from './pages/Article';
-import { Resume } from './pages/Resume';
+// import { Resume } from './pages/Resume';
 import { Header } from './global/Header';
 import { Footer } from './global/Footer';
 import '../css/index.scss';
@@ -48,9 +48,9 @@ function App() {
         <Route path='/hire-me'>
           <HireMe />
         </Route>
-        <Route path='/resume'>
+        {/* <Route path='/resume'>
           <Resume />
-        </Route>
+        </Route> */}
         <Route path='/'>
           <Main />
         </Route>

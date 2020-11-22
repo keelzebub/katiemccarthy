@@ -59,9 +59,9 @@ export const Header = () => {
           <li className='mainHeader-nav-list-listItem'>
             <a href='/#services'>Services</a>
           </li>
-          <li className='mainHeader-nav-list-listItem'>
+          {/* <li className='mainHeader-nav-list-listItem'>
             <Link to='/resume'>Resumé</Link>
-          </li>
+          </li> */}
           <li className='mainHeader-nav-list-listItem'>
             <Link to='/hire-me'>Hire Me</Link>
           </li>
